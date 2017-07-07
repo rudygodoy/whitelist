@@ -1,0 +1,13 @@
+{
+  "name": "whitelist",
+  "description": "Whitelist modifier for BasicToken",
+  "author": "Rudy Godoy <hola@rudygodoy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "truffle-hdwallet-provider": "^0.0.3"
+  },
+  "devDependencies": {
+    "ethereumjs-testrpc": "^3.0.2",
+    "truffle": "3.2.2"
+  }
+}
