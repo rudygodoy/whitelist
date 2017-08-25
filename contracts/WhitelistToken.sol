@@ -15,6 +15,9 @@ contract WhitelistToken is ERC20Basic {
   }
 
   function WhitelistToken(address initialAccount, uint initialBalance) {
+    if(initialAccount == 0x0) {
+      initialAccount = msg.sender;
+    }    
     balances[initialAccount] = initialBalance;
     totalSupply = initialBalance;
     enableWhitelist(msg.sender);
