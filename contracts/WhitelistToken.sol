@@ -39,4 +39,7 @@ contract WhitelistToken is ERC20Basic {
     return balances[_owner];
   }
 
+  function holderBalance() onlyWhitelist external constant returns (uint256 balance) {
+    return balanceOf(msg.sender);
+  }  
 }
